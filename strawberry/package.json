@@ -4,6 +4,7 @@
   "homepage": "https://black-tul1p.github.io/Portfolio",
   "private": true,
   "dependencies": {
+    "@mui/material": "^5.10.9",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
