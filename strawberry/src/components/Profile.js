@@ -1,5 +1,6 @@
 import Me from "../resources/Professional.jpg";
 
+
 export default function Profile() {
   return (
     <div>
