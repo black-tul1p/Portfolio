@@ -1,6 +1,6 @@
 import "./App.css";
-import Navbar from "./Navbar";
-import Profile from "./Profile";
+import Navbar from "./components/Navbar";
+import Profile from "./components/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 export default function App() {
