@@ -1,5 +1,4 @@
-import Me from "../resources/Professional.jpg";
-
+import Me from "../assets/Professional.jpg";
 
 export default function Profile() {
   return (

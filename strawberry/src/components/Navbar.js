@@ -12,7 +12,6 @@ export default function Navbar() {
         <Link to="/" className="Nav-link">
           About
         </Link>
-        {/*<div><Link to="/#About">About</Link></div>*/}
         <Link to="/" className="Nav-link">
           Skills
         </Link>

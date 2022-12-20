@@ -1,16 +1,15 @@
+/************
+ App
+************/
+
+:root {
+  background-color: #282c34;
+  --font-main: #dfdfdf;
+  --font-dim: #bfbfbf;
+}
+
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
 
 .App-header {
@@ -24,27 +23,19 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+/************
+ Navbar
+************/
 
 .Navbar {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-self: center;
+  height: 3em;
   
   border-radius: 0 0 1vw 1vw;
-  box-shadow: 1px 1px 5px #282c3422;
+  /* box-shadow: 1px 1px 5px #282c3422; */
 }
 
 .Bar {
@@ -59,20 +50,25 @@
 
 .User-name {
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--font-main);
   text-align: left;
-  font-size: 0.75em;
-  min-width: fit-content;
-  padding: 0 0.5em 0;
+  font-size: 1em;
+  align-self: center;
+  padding: 0 1em 0;
 }
 
 .Nav-link {
   font-family: Helvetica, sans-serif;
-  color: black;
+  color: var(--font-main);
   text-decoration: none;
   font-size: 1em;
   font-weight: bold;
   padding: 0 0.8em 0;
 }
+
+/************
+ Profile
+************/
 
 .Profile-box {
   display: flex;
@@ -80,6 +76,8 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  -webkit-user-select: none;
+  user-select: none;
   z-index: 1;
 }
 
@@ -87,7 +85,7 @@
   max-width: 25vw;
   padding: 2.5%;
   box-shadow: 1em;
-  border-radius: 3vw;
+  border-radius: 2em;
 }
 
 .Profile-text-box {
@@ -110,19 +108,21 @@
 .Profile-text-top {
   font-family: 'Lato', sans-serif;
   font-size: 2em;
+  color: var(--font-dim);
 }
 
 .Profile-text-bottom {
   font-family: 'Roboto', sans-serif;
   font-size: 3em;
   font-weight: 700;
-  color: #282c34dd;
+  color: var(--font-main);
   animation: slide-in 2s;
 }
 
 #Job-desc {
   text-align: right;
   font-style: italic;
+  color: var(--font-dim);
   opacity: 0;
   animation: slide-in 2s 1s forwards;
 }
@@ -131,4 +131,47 @@
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
+}
+
+/************
+ About
+************/
+
+.Title {
+  font-size: 3em;
+  font-weight: bold;
+  color: var(--font-main);
+  padding-left: 1em;
+  text-align: left;
+  z-index: 4;
+}
+
+.About-page {
+  /* background-image: url(assets/seaside.jpg); */
+  background-color: #4d5565;
+  margin: 1em;
+}
+
+.Info-text {
+  color: var(--font-main);
+  text-align: left;
+  padding: 1em 3em;
+  position: relative;
+  z-index: 1;
+}
+
+.Color-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0,0,0,.7);
+  pointer-events: none;
+}
+
+.Contact-buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 2em 1em;
 }

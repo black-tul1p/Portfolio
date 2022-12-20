@@ -2,6 +2,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Profile from "./components/Profile";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import About from "./components/About";
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         </Routes>
       </Router>
       <Profile />
+      <About />
     </div>
   );
 }
